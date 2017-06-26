@@ -11,3 +11,5 @@ $ sudo npm install --g mocha
 
 Then run the input file with mocha, **NOT** nodejs.
 
+
+You'll also need to add user id and server url to the \_config.js file, and rename it to config.js

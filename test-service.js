@@ -6,8 +6,10 @@ var should = chai.should();
 
 chai.use(chaiHttp);
 
-var staging_url = 'http://staging-portfolio.briteinvest.com';
-var client_id = 'd89248d0-05d4-11e6-8cf6-05443d8c1614';
+var config = require('./config');
+
+var staging_url = config.staging_url;
+var client_id = config.client_id;
 
 describe('Test the portfolio service HTTP', function(){
 
