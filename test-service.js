@@ -31,6 +31,17 @@ describe('Test the portfolio service HTTP', function(){
 			})
 		
 	});
+	
+	it('should get historic data with specific amount of days', function(done){
+		var no_days = Math.floor(Math.random() * (365 - 1 + 1)) + 1;
+		chai.request(staging_url)
+			.get('/gethistorical?clientId=' + client_id + "&days=" + no_days)
+			.end(function(err, res){
+				res.should.have.status(200);
+				done();
+			})
+		
+	});
 
 	it('should get account info', function(done){
 		chai.request(staging_url)
