@@ -13,3 +13,7 @@ Then run the input file with mocha, **NOT** nodejs.
 
 
 You'll also need to add user id and server url to the \_config.js file, and rename it to config.js
+
+
+This is the library used for assertions - Chai js. Docs are quite good.
+http://chaijs.com/api/bdd/
